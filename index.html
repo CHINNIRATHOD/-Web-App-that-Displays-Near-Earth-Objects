@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles-main.css">
+  <link rel="shortcut icon" href="assets/icons/iconsCosmos.ico" type="image/x-icon">
+  <title>The Solar System &#9728;</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="logotipo">
+      <a href="index.html">
+        <div class="logo">
+          <span>C</span>
+          <span class="planet left">&#129680;</span>
+          <span>S</span>
+          <span>M</span>
+          <span class="planet right">&#129680;</span>
+          <span>S</span>
+        </div>
+      </a>
+      <!--<div id="logoCentro">
+        <a href="https://www.udla.edu.ec/" target="_blank"><img src="assets/images/udla.png"
+            alt="Logo UDLA"></a>
+      </div> -->
+    </div>
+    <span id="btnMenu"><i class="fas fa-bars"></i></span>
+    <nav>
+      <ul class="menu" id="menu">
+        <li><a href="./pages/mercurio.html">Mercury</a></li>
+        <li><a href="./pages/venus.html">Venus</a></li>
+        <li><a href="./pages/tierra.html">Earth</a></li>
+        <li><a href="./pages/luna.html">Moon</a></li>
+        <li><a href="./pages/marte.html">Mars</a></li>
+        <li><a href="./pages/jupiter.html">Jupyter</a></li>
+        <li><a href="./pages/saturno.html">Saturn</a></li>
+        <li><a href="./pages/urano.html">Uranus</a></li>
+        <li><a href="./pages/neptuno.html">Neptune</a></li>
+        <li><a href="./pages/formularioConcurso.html">Cosmic Contest</a></li>
+        <li><a href="./pages/ranking.html"> Cosmic Ranking </a></li>
+      </ul>
+    </nav>
+  </header>
+  <iframe id="sistema_solar" src="https://eyes.nasa.gov/apps/solar-system/#/home" loading="lazy"></iframe>
+  <main>
+    <section id="contenido">
+      <div id="planetaContenido">
+        <div id="planeta">
+          <div id="centrar">
+            <div id="sol"></div>
+          </div>
+          <div id="descripcionSol">
+            <p>"The blazing heart of our solar system."</p>
+            <h1>THE SUN <span id="emojiSol">&#9728;</span></h1>
+          </div>
+        </div>
+      </div>
+  
+      <article id="introduccion">
+        <p>The name <strong>Sun </strong> It comes from the Latin "sun", used by the ancient Romans to refer to the star that illuminated the day and was seen as a symbol of vitality and power. Since time immemorial, this majestic star has been an object of fascination, guiding life on Earth beneath its warm glow. Their tireless energy has allowed life to thrive, providing us with light and warmth throughout the centuries..</p>
+      </article>
+  
+      <article id="caracteristicas">
+        <h2>CHARACTERISTICS</h2>
+        <ul>
+          <li>It is classified as a spectral type star <strong>G2</strong> and belongs to the luminosity class<strong>V</strong>,which is represented as a "G2V" star.</li>
+          <li>The diameter of the Sun is approximately<strong>1.4 million kilometers</strong>,
+            although this measurement may vary slightly due to fluctuations in solar activity. It is important to note that its diameter is approximately 109 times larger than that of the Earth.</li>
+          <li>The distance from the center of the Sun to its surface, that is, its radius, is approximately <strong>696,340 kilometers</strong>. It is a large star compared to the planets in our solar system.</li>
+          <li>The age of the Sun is approximately <strong>4.5 billion years</strong>.</li>
+          <li>The approximate composition of the Sun is around <strong>74% hydrogen</strong> and about <strong>24% helium</strong>, with the rest made up of elements in small quantities, such as oxygen , carbon, neon, nitrogen, magnesium and iron.</li>
+        </ul>
+        <div id="foto"></div>
+      </article>
+  
+      <article id="curiosidades">
+        <h2>CURIOSITIES</h2>
+        <ul>
+          <li><strong>Solar cycles:</strong> The Sun goes through an activity cycle of approximately <strong>11 years</strong>, marked by fluctuations in the number of sunspots, flares and coronal mass ejections.< /li>
+            <li><strong>Extreme temperatures:</strong> The temperature on the solar surface is around <strong>5,778 degrees Kelvin</strong>, while in its core, where nuclear fusion occurs, <strong >15 million degrees Kelvin</strong>.</li>
+            <li><strong>Powerful gravity:</strong> The Sun's gravity is one of the factors that keeps the solar system in balance, with a gravitational acceleration of <strong>274 m/s²</strong> on its surface. </li>
+            <li><strong>Solar energy:</strong> In addition to being vital for life, the Sun is the main source of renewable energy on Earth. Through solar panel technology, we can harness its energy in a sustainable way.</li>
+          </ul>
+      </article>
+  
+    </section>
+    
+  </main>
+  
+  <footer>
+    <div id="contenidoFooter">
+      <div id="creditos">
+        <p>CREDITS</p>
+        <p>
+          Project: Create an Orrery Web App that Displays Near-Earth Objects
+          <br>
+          Event: NASA Space Apps Challenge 2024
+          
+          Participants:
+          
+              Computer Science & Engineering Students
+              Dayananda Sagar University, Harohalli
+        </p>
+      </div>
+      <!--<ul class="wrapper">
+        <li class="icon github">
+          <span class="tipo">Esteban</span>
+          <a href="https://github.com/dolaraso"><span><i class="fab fa-github"></i></span></a>
+        </li>
+        
+      </ul>
+      <div id="mapa">
+        <p>UBICACIÓN</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.209051485901!2d-78.4592182!3d-0.1625548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d590136d487c2f%3A0x494de438292c29b3!2sUniversidad%20de%20Las%20Am%C3%A9ricas%20-%20Campus%20UDLAPARK!5e0!3m2!1ses-419!2sec!4v1727583609179!5m2!1ses-419!2sec1"
+          width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>-->
+    </div>
+  </footer>
+  <img src="./assets/images/botonInicioPagina.webp" alt="Imagen cohete para volver al inicio" id="inicio"
+    class="cohete" />
+  <script src="js/pages.js"></script>
+  <script src="js/menu.js"></script>
+
+
+</body>
+
+</html>

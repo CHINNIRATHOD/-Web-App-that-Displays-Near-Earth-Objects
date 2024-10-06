@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/iconsCosmos.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/formularioConcurso.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>&#128640; - A WALK THROUGH THE COSMOS</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <span>C</span>
+                <span class="planet left">&#129680;</span>
+                <span>S</span>
+                <span>M</span>
+                <span class="planet right">&#129680;</span>
+                <span>S</span>
+            </div>
+        </a>
+
+        <!--<div id="banderas" class="banderas">
+            <div class="bandera_item" data-language="es">
+                <img src="../assets/icons/es.svg" alt="Bandera de España para la traducción" class="bandera_img">
+            </div>
+            <div class="bandera_item" data-language="en">
+                <img src="../assets/icons/gb.svg" alt="Bandera de Gran Bretaña para la traducción" class="bandera_img">
+            </div>
+        </div>-->
+        <div id="logoCentro">
+            <a href="https://www.udla.edu.ec/" target="_blank" tabindex="-1"><img
+                    src="assets/images/udla.png" alt="Logo IES Juan Bosco"></a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>A WALK THROUGH THE COSMOS</h1>
+            <p>Welcome to &quot;A walk through the Cosmos&quot; ! Ready to test your knowledge?
+                about the universe and explore the wonders of space? Get ready for an experience
+                exciting and challenging, where you will have to answer 20 questions related to the content
+                learned. While you compete, a stopwatch will be running measuring the time you
+                It takes you a while to complete the questionnaire. Will you be able to enter the top 30 in the ranking? Once
+                You start your adventure, there is no turning back. Show your skills and compete for first place!
+                Remember, knowledge is power and the exploration of the cosmos never ends!</p>
+
+            <div id="iniciar">
+                <span>What is your name, cosmonaut?</span>
+                <input type="text" name="user_name" placeholder="Enter a nickname without commas or spaces" id="userName"
+                    tabindex="1" required>
+
+                <button id="btnIniciar" tabindex="2">START</button>
+
+                <div class="cronometro">
+                    <div id="hms">00:00:00</div>
+                </div>
+            </div>
+
+            <form method="POST" action="respuestasForm.php" id="formularioConcuro" class="formularioVisible">
+                <input type="hidden" name="user_name_hiddden" id="userNameHidden">
+                <input type="hidden" name="tiempo_empleado" id="tiempoEmpleadoHidden">
+                <div>
+                    <span>1&#41; Why is Uranus extremely tilted?</span>
+                    <label for="pregunta1a"><input type="radio" name="pregunta1" id="pregunta1a" value="incorrecta">
+                        a&#41; Because it is the largest planet in the Solar System.</label>
+                    <label for="pregunta1b"><input type="radio" name="pregunta1" id="pregunta1b" value="correcta">
+                        b&#41; Because its axis of rotation is inclined more than 90° in
+                        relation to its orbital plane.</label>
+                    <label for="pregunta1c"><input type="radio" name="pregunta1" id="pregunta1c" value="incorrecta">
+                        c&#41; Because its surface is very irregular.</label>
+                </div>
+                <div>
+                    <span>2&#41; What are the two largest moons of Uranus?</span>
+                    <label for="pregunta2a"><input type="radio" name="pregunta2" id="pregunta2a" value="correcta">
+                        a&#41; Titania and Oberon.</label>
+                    <label for="pregunta2b"><input type="radio" name="pregunta2" id="pregunta2b" value="incorrecta">
+                        b&#41;Europa and Ganymede.</label>
+                    <label for="pregunta2c"><input type="radio" name="pregunta2" id="pregunta2c" value="incorrecta">
+                        c&#41; Miranda and Ariel.</label>
+                </div>
+                <div>
+                    <span>3&#41; What is the mass of Neptune compared to Earth?</span>
+                    <label for="pregunta3a"><input type="radio" name="pregunta3" id="pregunta3a" value="correcta">
+                        a&#41;17 times the mass of the Earth.</label>
+                    <label for="pregunta3b"><input type="radio" name="pregunta3" id="pregunta3b" value="incorrecta">
+                        b&#41; 10 times the mass of the Earth.</label>
+                    <label for="pregunta3c"><input type="radio" name="pregunta3" id="pregunta3c" value="incorrecta">
+                        c&#41;5 times the mass of the Earth.</label>
+                </div>
+                <div>
+                    <span>4&#41;What is the length of a year on Neptune?</span>
+                    <label for="pregunta4a"><input type="radio" name="pregunta4" id="pregunta4a" value="correcta">
+                        a&#41; 164.8 Earth years.</label>
+                    <label for="pregunta4b"><input type="radio" name="pregunta4" id="pregunta4b" value="incorrecta">
+                        b&#41; 84 earth years.</label>
+                    <label for="pregunta4c"><input type="radio" name="pregunta4" id="pregunta4c" value="incorrecta">
+                        c&#41; 365 Earth days.</label>
+                </div>
+                <div>
+                    <span>5&#41; What is the average distance between the Moon and Earth?</span>
+                    <label for="pregunta5a"><input type="radio" name="pregunta5" id="pregunta5a" value="incorrecta">
+                        a&#41; Approximately 184,400 km</label>
+                    <label for="pregunta5b"><input type="radio" name="pregunta5" id="pregunta5b" value="incorrecta">
+                        b&#41; Approximately 584,400 km</label>
+                    <label for="pregunta5c"><input type="radio" name="pregunta5" id="pregunta5c" value="correcta">
+                        c&#41; Approximately 384,400 km</label>
+                </div>
+                <div>
+                    <span>6&#41;What is the period of rotation of the Moon?</span>
+                    <label for="pregunta6a"><input type="radio" name="pregunta6" id="pregunta6a" value="incorrecta">
+                        a&#41; 365 days</label>
+                    <label for="pregunta6b"><input type="radio" name="pregunta6" id="pregunta6b" value="correcta">
+                        b&#41; 27.3 days</label>
+                    <label for="pregunta6c"><input type="radio" name="pregunta6" id="pregunta6c" value="incorrecta">
+                        c&#41; 24 hours</label>
+                </div>
+
+                <div>
+                    <span>7&#41; What is the main composition of the atmosphere of the
+                        Moon?</span>
+                    <label for="pregunta7a"><input type="radio" name="pregunta7" id="pregunta7a" value="correcta">
+                        a&#41; Helium</label>
+                    <label for="pregunta7b"><input type="radio" name="pregunta7" id="pregunta7b" value="incorrecta">
+                        b&#41; Hydrogen</label>
+                    <label for="pregunta7c"><input type="radio" name="pregunta7" id="pregunta7c" value="incorrecta">
+                        c&#41; Oxygen</label>
+                </div>
+
+                <div>
+                    <span>8&#41; What effects does the Moon have on the Earth?</span>
+                    <label for="pregunta8a"><input type="radio" name="pregunta8" id="pregunta8a" value="incorrecta">
+                        a&#41;Rain and weather.</label>
+                    <label for="pregunta8b"><input type="radio" name="pregunta8" id="pregunta8b" value="correcta">
+                        b&#41;Tides and the stabilization of the Earth's axis.</label>
+                    <label for="pregunta8c"><input type="radio" name="pregunta8" id="pregunta8c" value="incorrecta">
+                        c&#41;The change of seasons and the increase in gravity.</label>
+                </div>
+
+                <div>
+                    <span>9&#41; What is the only planet in the solar system named after a
+                        mythological goddess?</span>
+                    <label for="pregunta9a"><input type="radio" name="pregunta9" id="pregunta9a" value="correcta">
+                        a&#41; Venus.</label>
+                    <label for="pregunta9b"><input type="radio" name="pregunta9" id="pregunta9b" value="incorrecta">
+                        b&#41; Mars.</label>
+                    <label for="pregunta9c"><input type="radio" name="pregunta9" id="pregunta9c" value="incorrecta">
+                        c&#41; Mercury.</label>
+                </div>
+
+                <div>
+                    <span>10&#41; What is the average temperature on Venus?</span>
+                    <label for="pregunta10a"><input type="radio" name="pregunta10" id="pregunta10a" value="incorrecta">
+                        a&#41; -453 &deg;C.</label>
+                    <label for="pregunta10b"><input type="radio" name="pregunta10" id="pregunta10b" value="incorrecta">
+                        b&#41; 673 &deg;C.</label>
+                    <label for="pregunta10c"><input type="radio" name="pregunta10" id="pregunta10c" value="correcta">
+                        c&#41; 453 &deg;C.</label>
+                </div>
+
+                <div>
+                    <span>11&#41; What makes the surface of Venus difficult to see?
+                        study?</span>
+                    <label for="pregunta11a"><input type="radio" name="pregunta11" id="pregunta11a" value="incorrecta">
+                        a&#41; Gravity.</label>
+                    <label for="pregunta11b"><input type="radio" name="pregunta11" id="pregunta11b" value="correcta">
+                        b&#41;The dense atmosphere.</label>
+                    <label for="pregunta11c"><input type="radio" name="pregunta11" id="pregunta11c" value="incorrecta">
+                        c&#41; The distance from Earth.</label>
+                </div>
+
+                <div>
+                    <span>12&#41; How long does it take for Mercury to complete one orbit around the planet?
+                        Sun?</span>
+                    <label for="pregunta12a"><input type="radio" name="pregunta12" id="pregunta12a" value="correcta">
+                        a&#41; 87.87 Earth days.</label>
+                    <label for="pregunta12b"><input type="radio" name="pregunta12" id="pregunta12b" value="incorrecta">
+                        b&#41; 100 Earth days.</label>
+                    <label for="pregunta12c"><input type="radio" name="pregunta12" id="pregunta12c" value="incorrecta">
+                        c&#41; 107.67 Earth days.</label>
+                </div>
+
+                <div>
+                    <span>13&#41; What is the closest planet to the Sun?</span>
+                    <label for="pregunta13a"><input type="radio" name="pregunta13" id="pregunta13a" value="incorrecta">
+                        a&#41; Venus.</label>
+                    <label for="pregunta13b"><input type="radio" name="pregunta13" id="pregunta13b" value="incorrecta">
+                        b&#41; Land.</label>
+                    <label for="pregunta13c"><input type="radio" name="pregunta13" id="pregunta13c" value="correcta">
+                        c&#41; Mercury.</label>
+                </div>
+
+                <div>
+                    <span>14&#41; Where does the name of our planet, Earth, come from?</span>
+                    <label for="pregunta14a"><input type="radio" name="pregunta14" id="pregunta14a" value="correcta">
+                        a&#41; From the Latin "terra", which means dry.</label>
+                    <label for="pregunta14b"><input type="radio" name="pregunta14" id="pregunta14b" value="incorrecta">
+                        b&#41;From the Greek "gea", meaning earth.</label>
+                    <label for="pregunta14c"><input type="radio" name="pregunta14" id="pregunta14c" value="incorrecta">
+                        c&#41; From the English "earth", which means land.</label>
+                    </div>
+
+                <div>
+                    <span>15&#41; What gas is the most important in the Earth's atmosphere for
+                        human respiration?</span>
+                    <label for="pregunta15a"><input type="radio" name="pregunta15" id="pregunta15a" value="incorrecta">
+                        a&#41; Nitrogen.</label>
+                    <label for="pregunta15b"><input type="radio" name="pregunta15" id="pregunta15b" value="correcta">
+                        b&#41; Oxygen.</label>
+                    <label for="pregunta15c"><input type="radio" name="pregunta15" id="pregunta15c" value="incorrecta">
+                        c&#41; Carbon dioxide.</label>
+                    </div>
+                    <div>
+                        <span>16&#41; What is the atmosphere mainly composed of?
+                            Jupiter?</span>
+                    <label for="pregunta16a"><input type="radio" name="pregunta16" id="pregunta16a" value="incorrecta">
+                        a&#41; Oxygen and nitrogen</label>
+                    <label for="pregunta16b"><input type="radio" name="pregunta16" id="pregunta16b" value="correcta">
+                        b&#41; Hydrogen and helium</label>
+                    <label for="pregunta16c"><input type="radio" name="pregunta16" id="pregunta16c" value="incorrecta">
+                        c&#41; Carbon dioxide and oxygen</label>
+                </div>
+                <div>
+                    <span>17&#41; What is the wettest month on Jupiter?</span>
+                    <label for="pregunta17a"><input type="radio" name="pregunta17" id="pregunta17a" value="incorrecta">
+                        a&#41; July</label>
+                    <label for="pregunta17b"><input type="radio" name="pregunta17" id="pregunta17b" value="correcta">
+                        b&#41; Septiembre</label>
+                    <label for="pregunta17c"><input type="radio" name="pregunta17" id="pregunta17c" value="incorrecta">
+                        c&#41; December</label>
+                </div>
+                <div>
+                    <span>18&#41;Why is it believed that there is no life on Mars?</span>
+                    <label for="pregunta18a"><input type="radio" name="pregunta18" id="pregunta18a" value="incorrecta">
+                        a&#41; Due to intense volcanic activity</label>
+                    <label for="pregunta18b"><input type="radio" name="pregunta18" id="pregunta18b" value="correcta">
+                        b&#41; Due to the lack of a suitable atmosphere</label>
+                    <label for="pregunta18c"><input type="radio" name="pregunta18" id="pregunta18c" value="incorrecta">
+                        c&#41; Due to the low temperature</label>
+                </div>
+                <div>
+                    <span>19&#41; What is Saturn's atmosphere mainly composed of?</span>
+                    <label for="pregunta19a"><input type="radio" name="pregunta19" id="pregunta19a" value="incorrecta">
+                        a&#41; Oxygen and nitrogen</label>
+                    <label for="pregunta19b"><input type="radio" name="pregunta19" id="pregunta19b" value="correcta">
+                        b&#41; hydrogen and helium</label>
+                    <label for="pregunta19c"><input type="radio" name="pregunta19" id="pregunta19c" value="incorrecta">
+                        c&#41; Carbon dioxide and oxygen</label>
+                </div>
+                <div>
+                    <span>20&#41; What is the most distinctive aesthetic feature of Saturn?</span>
+                    <label for="pregunta20a"><input type="radio" name="pregunta20" id="pregunta20a" value="incorrecta">
+                        a&#41; Its gigantic size.</label>
+                    <label for="pregunta20b"><input type="radio" name="pregunta20" id="pregunta20b" value="incorrecta">
+                        b&#41; Its high density.</label>
+                    <label for="pregunta20c"><input type="radio" name="pregunta20" id="pregunta20c" value="correcta">
+                        c&#41; Your rings.</label>
+                </div>
+                <button id="btnEnviar" type="submit" onclick="detenerCrono()">SEND ANSWERS</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="contenidoFooter">
+            <div id="creditos">
+                <p>CREDITS</p>
+                <p>
+                    Project: Create an Orrery Web App that Displays Near-Earth Objects<br>
+
+                    Event: NASA Space Apps Challenge 2024
+          
+                     Participants:
+                     Computer science & Engineering Students<br>
+                     Dayananda sagar University, Harohalli
+                </p>
+            </div>
+            <!-- <ul class="wrapper">
+                <li class="icon github">
+                    <span class="tipo">Esteban</span>
+                    <a href="https://github.com/dolaraso"><span><i class="fab fa-github"></i></span></a>
+                  </li>
+            </ul>
+            <div class="mapa">
+                <p>UBICACI&Oacute;N</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.209051485901!2d-78.4592182!3d-0.1625548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d590136d487c2f%3A0x494de438292c29b3!2sUniversidad%20de%20Las%20Am%C3%A9ricas%20-%20Campus%20UDLAPARK!5e0!3m2!1ses-419!2sec!4v1727583609179!5m2!1ses-419!2sec1"
+                    width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+        </div>
+    </footer>
+    <script src="../js/formularioConcurso.js"></script>
+</body>
+
+</html>
